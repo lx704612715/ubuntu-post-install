@@ -43,7 +43,7 @@ config:
     ros: true
     ros2: false
     signal: true
-    skype: true
+    skype: false
     spotify: false
     slack: true
     sublimetext: true
@@ -75,14 +75,13 @@ config:
     - kicad/kicad-5.1-releases
     # Linux kernel manager
     - ppa:cappelikan/ppa
-    # zotero
-    - ppa:smathot/cogscinl 
   # Install components
   # APT Packages, Python Modules, Debian packages
   install:
     snaps:
       - classic::pycharm-professional
       - libreoffice
+      - zotero-snap
 #      - classic::vscode
 #      - classic::edge::hugo
     # Debian packages/.deb files
@@ -121,8 +120,6 @@ config:
         # Github
         - gh
         - git
-        # Zotero
-        - zotero-standalone
         # Gvisor
         - runsc
         # Hashicorp
@@ -136,7 +133,7 @@ config:
         # Signal
         - signal-desktop
         # Skype
-        - skypeforlinux
+        # - skypeforlinux
         # WineHQ
         # - wine-stable
         # Bazel
